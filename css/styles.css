@@ -1,4 +1,4 @@
-footer,nav {
+footer{
     text-align: center;
     padding: 20px;
     background-color: rgb(255, 244, 244);
@@ -13,9 +13,7 @@ footer,nav {
     background-size:cover;
     width: 100%;
   }
-.image{
-    width: fit-content;
-}
+
 
 .logo{
     position: absolute;
@@ -27,4 +25,13 @@ footer,nav {
 body{
     font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
+}
+.imageLanding{
+  background-image: url('https://i.postimg.cc/qRw5xJ7C/man-and-a-woman-wear.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.navshadow{
+  box-shadow: 0 2px 4px rgba(0,0,0.1);
 }
