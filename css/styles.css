@@ -1,0 +1,30 @@
+footer,nav {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 244, 244);
+    color: rgb(253, 0, 156);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+.landingimg{
+    background-size: 100svh;
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+  }
+.image{
+    width: fit-content;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
