@@ -51,7 +51,7 @@ function searchdata(event) {
                     <figure>
                         <figcaption>${item.description}</figcaption>
                     </figure>
-                    <p class="price">${item.price}</p>
+                    <p class="price">R${item.price}</p>
                     <button data-add value='${index}' class="add-to-cart">add to cart</button>
                 </div>`;
         }).join('');
@@ -78,7 +78,7 @@ function sortList() {
                 <figure>
                     <figcaption>${item.description}</figcaption>
                 </figure>
-                <p class="price">${item.price}</p>
+                <p class="price">R${item.price}</p>
                 <button data-add value='${index}' class="add-to-cart">add to cart</button>
             </div>`;
         }).join('');
@@ -95,7 +95,7 @@ if(items.length==0){
   <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>`
-}else{
+}else{//displays products if array length is not empty
     main.innerHTML = items.map(function(item, index) {
         return `
         <div class="product">
@@ -104,7 +104,7 @@ if(items.length==0){
             <figure>
                 <figcaption>${item.description}</figcaption>
             </figure>
-            <p class="price">${item.price}</p>
+            <p class="price">R${item.price}</p>
             <button data-add value='${index}' class="add-to-cart">add to cart</button>
         </div>`;
     }).join('');
