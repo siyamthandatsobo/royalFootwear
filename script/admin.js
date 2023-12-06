@@ -17,10 +17,9 @@ let item4 =new Constructor('siya','This is better than the fake',900,'https://i.
 let item5 =new Constructor('Another nike','This is better than the fake',1500,'https://i.postimg.cc/sDL0Q8zR/product-5.webp')
 let item6 =new Constructor('Another nike','This is better than the fake',3000,'https://i.postimg.cc/QMdSdGYD/product6.jpg')
 //this an empty array where all products will be stored
-let items=[]
+let items= JSON.parse(localStorage.getItem('items')) || localStorage.setItem('items',JSON.stringify(items)) 
 items.push(item1,item2,item3,item4,item5,item6) //pushing items into array,can add more items
-
-localStorage.setItem('items',JSON.stringify(items)) //blue items is the name of the array ,items you use to refer to it
+//blue items is the name of the array ,items you use to refer to it
 //sets the array from local
 items = JSON.parse(localStorage.getItem('items')) 
 //use queryselctor to select item
@@ -62,4 +61,27 @@ table.addEventListener('click',function(){
  if(event.target.classList.contains('delete')){
     remove(event.target.value)
  }
+})
+
+
+    // let input1=document.querySelector('[data-input1]').value;
+    // let input2=document.querySelector('[data-input2]').value;
+    // let input3=document.querySelector('[data-input3]').value;
+    // let input4=document.querySelector('[data-input4]').value;
+    // let newItem=new Constructor(input1,input2,input3,input4)
+    // items.push(newItem)
+
+    let newProductSave=document.querySelector('[data-saveProduct]')
+
+newProductSave.addEventListener('click',function(){
+    let input1=document.querySelector('[data-input1]').value;
+    let input2=document.querySelector('[data-input2]').value;
+    let input3=document.querySelector('[data-input3]').value;
+    let input4=document.querySelector('[data-input4]').value;
+    let newItem=new Constructor(input1,input2,input3,input4)
+    items.push(newItem)
+    localStorage.setItem('items',JSON.stringify(items))
+    // favourite()
+    siya()
+    
 })
