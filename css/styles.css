@@ -23,7 +23,7 @@ footer{
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap');
 body{
-    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
 padding:0;
 margin:0;
@@ -33,6 +33,7 @@ margin:0;
   background-size: cover;
   background-position: center;
   height: 500px;
+  color:lightgray 50%;
 }
 .navshadow{
   box-shadow: 0 2px 4px rgba(0,0,0.1);
@@ -118,3 +119,31 @@ img {
 .callmodal{
     float: right;
 }
+.spaceimg{
+  margin-top: 150px;
+}
+.image-size{
+width: 15.125rem;
+height: 10.25rem; 
+}
+.shopBtn{
+  background-color: #151010;
+     padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.shopBtn:hover {
+  background-color: #c7c712;
+}
+.background{
+  background-color: #151010;
+}
+.newArrival{
+  max-width: 800px;
+}
+h1{
+  color:#f0ded1
+  
+} 

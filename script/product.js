@@ -1,5 +1,5 @@
 let main =document.querySelector('section')
-let purchased =[]
+let purchased= []
 let items =JSON.parse(localStorage.getItem(('items')))
 //Display items that i got from local storage 
 main.innerHTML=items.map(function(item,index){
