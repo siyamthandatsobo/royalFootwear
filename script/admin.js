@@ -39,7 +39,7 @@ function siya(){
             <td>R ${item.price}</td>
             <td>${item.description}</td>
             <td><img src='${item.url}' width="400px" height="400px"></td>
-            <td><button>Edit</button></td>
+            <td><button>Edit</button>${index}</td>
             <td><button class='delete' value='${index}'>Delete</button></td>
             </tr>
             `
