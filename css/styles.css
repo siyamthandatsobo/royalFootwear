@@ -1,12 +1,4 @@
-footer{
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(255, 244, 244);
-    color: rgb(253, 0, 156);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+
 .landingimg{
     background-size: 100svh;
     background-position: center;
@@ -86,6 +78,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(244, 221, 225);
 }
 
 h1 {
@@ -143,7 +136,31 @@ height: 10.25rem;
 .newArrival{
   max-width: 800px;
 }
-h1{
-  color:#f0ded1
-  
-} 
+
+#aboutImg{
+  width:100%;
+  max-width: max-content;
+}
+.footer{
+  text-align: center;
+}
+footer {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  /* position: absolute; */
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  font-size: 30px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
