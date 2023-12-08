@@ -96,3 +96,31 @@ let message=document.getElementById('purChaseP');
 message.addEventListener('click',function(){
     alert('Thanks for Support')
 })
+
+
+if (purchased.length == 0) {
+    table.innerHTML = `<div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>`;
+  } else {
+    // Display products if the array length is not empty
+    table.innerHTML = purchased
+    .map((item, index) => {
+      return `
+        <tr>
+            <td>${index + 1}</td>
+            <td>${item.name}</td>
+            <td>${item.description}</td>
+            <td><input type="number" id="quantity" name="quantity"></input></td>
+            <td>${item.price}</td>
+            <td><button class='delete' value='${index}'>Delete</button></td>
+        </tr>
+    `;
+    })
+    .join("");
+}
+  
+  
