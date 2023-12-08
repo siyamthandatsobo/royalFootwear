@@ -63,6 +63,17 @@ function searchdata(event) {
 
 search.addEventListener("click", searchdata);
 
+try {
+  input.toUpperCase();
+}
+catch(err) {
+  document.getElementById("errorHandle").innerHTML = err.name;
+}
+
+
+
+
+
 // Function to sort items by price
 function sortList() {
   if (items) {
