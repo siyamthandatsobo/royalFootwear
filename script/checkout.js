@@ -92,3 +92,7 @@ quantityInputs.forEach(function (input, index) {
     }
   });
 });
+let message=document.getElementById('purChaseP');
+message.addEventListener('click',function(){
+    alert('Thanks for Support')
+})
